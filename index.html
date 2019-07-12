@@ -20,7 +20,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
     />
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Omar Vega</title>
   </head>
 
@@ -28,12 +28,12 @@
     <div class="container">
       <header id="main-header">
         <div class="row no-gutters">
-          <div class="col-lg-4 col-md-4">
-            <img src="./assets/img/Omarphoto2.png" alt="" />
+          <div class="col-lg-4 col-md-5">
+            <img src="./assets/img/Omarphoto2.png" alt="Omar Vega" />
           </div>
           <div class="col-lg-8 col-md-7">
             <div class="d-flex flex-column">
-              <div class="p-2 bg-dark text-white">
+              <div class="p-5 bg-dark text-white">
                 <div
                   class="d-flex flex-row justify-content-between align-items-center"
                 >
@@ -54,10 +54,7 @@
                     </a>
                   </div>
                   <div>
-                    <a
-                      href="https://github.com/omarvegaabreu"
-                      class="text-white"
-                    >
+                    <a href="http://github.com" class="text-white">
                       <i class="fab fa-github"></i>
                     </a>
                   </div>
@@ -73,23 +70,23 @@
                   class="d-flex flex-row text-white align-items-stretch text-center"
                 >
                   <div
-                    class="port-item py-2 px-4 bg-primary"
+                    class="port-item p-4 bg-primary"
                     data-toggle="collapse"
-                    data-target="index.html"
+                    data-target="#home"
                   >
                     <i class="fas fa-home fa-2x d-block"></i>
                     <span class="d-none d-sm-block">Home</span>
                   </div>
                   <div
-                    class="port-item py-2 px-4 bg-success"
+                    class="port-item p-4 bg-success"
                     data-toggle="collapse"
-                    data-target="index.html"
+                    data-target="#resume"
                   >
                     <i class="fas fa-graduation-cap fa-2x d-block"></i>
                     <span class="d-none d-sm-block">Resume</span>
                   </div>
                   <div
-                    class="port-item py-2 px-4 bg-warning"
+                    class="port-item p-4 bg-warning"
                     data-toggle="collapse"
                     data-target="#work"
                   >
@@ -97,7 +94,7 @@
                     <span class="d-none d-sm-block">Work</span>
                   </div>
                   <div
-                    class="port-item py-2 px-4 bg-danger"
+                    class="port-item p-4 bg-danger"
                     data-toggle="collapse"
                     data-target="#contact"
                   >
@@ -127,7 +124,6 @@
           <hr />
           <h4>HTML 5</h4>
           <div class="progress mb-3">
-            I th
             <div class="progress-bar bg-success" style="width:100%"></div>
           </div>
           <h4>CSS 3</h4>
@@ -446,7 +442,6 @@
       $(".port-item").click(function() {
         $(".collapse").collapse("hide");
       });
-
       $(document).on("click", '[data-toggle="lightbox"]', function(e) {
         e.preventDefault();
         $(this).ekkoLightbox();
