@@ -26,3 +26,6 @@ body {
   height: auto;
   object-fit: cover;
 }
+.img-fluid {
+  object-fit: cover;
+}
